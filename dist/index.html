@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+  <meta charset="UTF-8">
+  <title>webpackでapiモック</title>
+  <script src="./js/main.js"></script>
+</head>
+<body>
+  <h1>webpackでapiモック</h1>
+  <div>
+    <h2>お品書き</h2>
+    <dl>
+      <dt>りんご</dt>
+      <dd>
+        &yen;100<br>
+        一人5個まで
+      </dd>
+      <dt>みかん</dt>
+      <dd>
+        &yen;300<br>
+        一人10個まで
+      </dd>
+      <dt>めろん</dt>
+      <dd>
+        &yen;10,000<br>
+        一人1個まで
+      </dd>
+    </dl>
+  </div>
+  <div>
+    お客さん：
+    <select id="itemId">
+      <option value="apple">りんご</option>
+      <option value="orange">みかん</option>
+      <option value="melon">めろん</option>
+    </select>
+    を
+    <input type="number" id="amount">
+    個
+    <input type="button" id="btn" value="下さい">
+    <br>
+    定員：「<span id="staff">...</span>」
+  </div>
+</body>
+</html>
